@@ -1,0 +1,233 @@
+# ============================================================
+# NexKart - Complete .gitignore File
+# ============================================================
+
+# ============================================================
+# JAVA / SPRING BOOT (Backend)
+# ============================================================
+
+# Maven build output
+backend/target/
+backend/*.jar
+backend/*.war
+backend/*.ear
+
+# Maven wrapper (optional - keep if you want)
+# backend/.mvn/
+
+# Spring Boot logs
+backend/logs/
+backend/*.log
+
+# Spring Boot application logs
+backend/spring.log
+
+# IDE generated files - Eclipse
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/bin/
+
+# IDE generated files - IntelliJ
+backend/.idea/
+backend/*.iml
+backend/*.iws
+backend/*.ipr
+
+# IDE generated files - VS Code Java
+backend/.vscode/
+
+# Compiled class files
+backend/**/*.class
+
+# Package files
+backend/**/*.jar
+backend/**/*.war
+
+# ============================================================
+# REACT / NODE.JS (Frontend)
+# ============================================================
+
+# Node modules - MOST IMPORTANT (very large folder)
+frontend/node_modules/
+
+# React build output
+frontend/build/
+frontend/dist/
+
+# npm logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.npm
+
+# ESLint cache
+frontend/.eslintcache
+
+# Optional npm cache
+frontend/.cache/
+
+# Testing coverage
+frontend/coverage/
+
+# IDE - VS Code
+frontend/.vscode/
+
+# Environment files (IMPORTANT - contains secrets)
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# ============================================================
+# DATABASE
+# ============================================================
+
+# MySQL data files (if running locally)
+*.sql.bak
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps
+*.dump
+
+# ============================================================
+# OPERATING SYSTEM FILES
+# ============================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================================
+# IDE AND EDITOR FILES
+# ============================================================
+
+# Eclipse
+.metadata
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.target
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# ============================================================
+# LOGS AND TEMP FILES
+# ============================================================
+
+# Log files
+*.log
+logs/
+log/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.backup
+
+# ============================================================
+# SECURITY - NEVER PUSH THESE
+# ============================================================
+
+# Environment files with secrets
+.env
+.env.*
+*.env
+
+# Application properties with passwords
+# (Comment this out if you want to push properties without passwords)
+# backend/src/main/resources/application.properties
+
+# JWT secrets
+secrets/
+*.pem
+*.key
+*.p12
+*.keystore
+*.jks
+
+# API keys
+api-keys.txt
+credentials.txt
+
+# ============================================================
+# UPLOADS AND MEDIA
+# ============================================================
+
+# User uploaded files
+backend/uploads/
+uploads/
+
+# Large media files
+*.mp4
+*.mp3
+*.avi
+*.mov
+*.zip
+*.rar
+*.7z
+
+# ============================================================
+# MISCELLANEOUS
+# ============================================================
+
+# Postman collection (optional - you can remove this line
+# if you WANT to push your postman collection)
+# postman/
+
+# Package lock files (optional)
+# frontend/package-lock.json
